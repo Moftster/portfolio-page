@@ -1,0 +1,26 @@
+.container-fluid {
+  background-color: #eeeeee ;
+}
+
+.main-body {
+  margin: 5px 200px 5px 200px;
+  background-color:  #fffde7;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.about-section {
+  background-color: yellow;
+}
+
+.thumbnail {
+  margin: 40px !important;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+}
