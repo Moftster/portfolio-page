@@ -12,30 +12,33 @@
 <body>
   <div class="container-fluid">
     <div class="main-body container">
-      <nav class="navbar fixed-top navbar-default">
-        <div class="navbar-header">
 
-<a class="navbar-brand">
-  <img src="images/mlogo.jpg" alt="Mofty logo" height="30px">Mofty.co.uk
-</a>
+
+<nav class="navbar fixed-top navbar-default">
+
+<div class="navbar-header">
+  <a class="logo pull-left" href="#">
+    <img src="images/mlogo.jpg" height="42px"></a>
+<a class="navbar-brand" href="#">Mofty.co.uk</a>
 </div>
+
 <ul class="nav navbar-nav">
-<li><a= href="#">Home</a></li>
-<li><a= href="#">About</a></li>
-<li><a= href="#">Portfolio</a></li>
-<li><a= href="#">Proficiencies</a></li>
-<li><a= href="#">Experience</a></li>
-<li><a= href="#">Contact</a></li>
-<li><a= href="#">Social Media</a></li>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#proficiencies">Proficiencies</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#social">Social Media</a></li>
 
 
 
 
 
 </ul>
-</div>
 
 </nav>
+
 
 <!--
 <ul>
@@ -51,10 +54,10 @@
 
 
 <div class="about-section">
-<h2>About</h2>
+<h2 name="about">About</h2>
 <p>Front-End Developer and UX/UI designer, with practical experience in project management, branding strategy, and creative direction; devoted to functional programming and information architecture.</p>
 </div>
-<h2>Portfolio</h2>
+<h2 id="portfolio">Portfolio</h2>
 <div class="container">
 <div class="col row ">
   <div class="col col-md-5 thumbnail"><h3>Sell My Snaps</h3><img src="images/sms-screenshot.png" alt="Sell My Snaps screenshot"></div>
@@ -69,19 +72,41 @@
 
 </div>
 
-<h2>Proficiencies</h2>
+<div class="img-fluid proficient">
+<h2 id="proficiencies">Proficiencies</h2>
+<div class="row">
+
+<div class="col col-md-3">
+<img src="images/css3.png" alt="CSS logo">
+<img src="images/html5.png" alt="HTML logo">
+<img src="images/javascript.png" alt="Javascript logo">
+
+</div>
+</div>
+
+<div class="row">
+
+<div class="col">
+  <img src="images/python.png" alt="Python logo">
+<img src="images/photoshop.png" alt="Photoshop logo">
+<img src="images/github.png" alt="Github logo">
+
+</div>
+
 
 <!-- this will have a list of languages and programs I am proficient in with their logos in a circle. Gimp, photoshop, CSS, Python, CSS, HTML, Javascript-->
+</div>
 
-<h2>Experience</h2>
+<h2 id="experience">Experience</h2>
 <!-- this will have a list of work experience including logos for DWP, HMRC, Sell My Snaps, CIMA -->
 
 
-<h2>Contact</h2>
+<h2 id="contact">Contact</h2>
 
 
-<h2>Social Media</h2>
+<h2 id="social">Social Media</h2>
 
+</div>
 </div>
 </body>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
