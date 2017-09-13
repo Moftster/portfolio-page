@@ -4,8 +4,11 @@
 <head>
 <title>Mofty Portfolio Page</title>
   <link rel="stylesheet" type="text/css" href="style/style.css">
-  <link rel"stylesheet" href="style/animate.css">
+  <link rel="stylesheet" href="style/animate.css">
+  <link rel="stylesheet" href="style/bootstrap-social.css">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/a2d5fcff26.js"></script>
 
 </head>
 
@@ -13,8 +16,8 @@
   <div class="container-fluid">
     <div class="main-body container">
 
-
-<nav class="navbar fixed-top navbar-default">
+<nav class="navbar navbar-fixed-top navbar-default">
+  <div class="container">
 
 <div class="navbar-header">
   <a class="logo pull-left" href="#">
@@ -22,7 +25,7 @@
 <a class="navbar-brand" href="#">Mofty.co.uk</a>
 </div>
 
-<ul class="nav navbar-nav">
+<ul class="nav navbar-nav navbar-right">
 <li><a href="#">Home</a></li>
 <li><a href="#about">About</a></li>
 <li><a href="#portfolio">Portfolio</a></li>
@@ -36,7 +39,7 @@
 
 
 </ul>
-
+</div>
 </nav>
 
 
@@ -54,12 +57,28 @@
 
 
 <div class="about-section">
+
 <h2 name="about">About</h2>
-<p>Front-End Developer and UX/UI designer, with practical experience in project management, branding strategy, and creative direction; devoted to functional programming and information architecture.</p>
+<div class="row">
+<div class="col col-md-3">
+<img src="images/profile-pic.jpg" class="img-circle img-fluid img-responsive">
 </div>
-<h2 id="portfolio">Portfolio</h2>
+<div class=" col col-md-9 align-middle"
+<p>This is the personal webpage of David Moftakhar. <br> David is a Front-End Developer with experience in UX and UI. <br> He has practical experience in project management, branding strategy, and creative direction; devoted to functional programming and information architecture.</p>
+</div>
+
+
+</div>
+
+
+
+</div>
+
+<div id="portfolio">
+<h2 >Portfolio</h2>
+</div>
 <div class="container">
-<div class="col row ">
+<div class="col row">
   <div class="col col-md-5 thumbnail"><h3>Sell My Snaps</h3><img src="images/sms-screenshot.png" alt="Sell My Snaps screenshot"></div>
   <div class="col col-md-5 thumbnail"><h3>tldr.wiki</h3><img src="images/sms-screenshot.png" alt="Sell My Snaps screenshot"></div>
   </div>
@@ -74,40 +93,92 @@
 
 <div class="img-fluid proficient">
 <h2 id="proficiencies">Proficiencies</h2>
+
+<div class="container">
+
+<div class="row">
+
+<div class="col col-md-4">
+  <img src="images/css3.png" class="img-responsive img-fluid" alt="CSS logo">
+<img src="images/javascript.png" alt="Javascript logo" class="img-responsive img-fluid"></div>
+
+
+
+  <div class="col col-md-4">
+
+<img src="images/html5.png" alt="HTML logo" class="img-responsive img-fluid">
+<img src="images/python.png" alt="Python logo" class="img-responsive img-fluid">
+</div>
+
+  <div class="col col-md-4">
+
+    <img src="images/photoshop.png" alt="Photoshop logo" class="img-responsive img-fluid">
+    <img src="images/github.png" alt="Github logo" class="img-responsive img-fluid">
+</div>
+</div>
+
+
+</div>
+
+
+
+<h2 id="experience">Experience</h2>
+<div class="exp">
 <div class="row">
 
 <div class="col col-md-3">
-<img src="images/css3.png" alt="CSS logo">
-<img src="images/html5.png" alt="HTML logo">
-<img src="images/javascript.png" alt="Javascript logo">
-
+  <img src="images/dwplogo.png" class="img-responsive img-fluid" alt="DWP logo">
 </div>
+<div class="col col-md-3">
+  <img src="images/downing-street-logo.png" class="img-responsive img-fluid" alt="Downing Street logo">
 </div>
-
-<div class="row">
-
-<div class="col">
-  <img src="images/python.png" alt="Python logo">
-<img src="images/photoshop.png" alt="Photoshop logo">
-<img src="images/github.png" alt="Github logo">
+<div class="col col-md-3">
+  <img src="images/mhrc-logo.png" class="img-responsive img-fluid" alt="HMRC logo">
+</div>
+<div class="col col-md-3">
+  <img src="images/cima-logo.jpg" class="img-responsive img-fluid" alt="CIMA logo">
+</div>
 
 </div>
 
-
-<!-- this will have a list of languages and programs I am proficient in with their logos in a circle. Gimp, photoshop, CSS, Python, CSS, HTML, Javascript-->
 </div>
-
-<h2 id="experience">Experience</h2>
 <!-- this will have a list of work experience including logos for DWP, HMRC, Sell My Snaps, CIMA -->
 
-
 <h2 id="contact">Contact</h2>
+<form>
+<div class="form-group">
+    <label for="fname">First name</label>
+<input type="text" class="form-control" id="fname" placeholder="Enter your first name...">
+<label for="lname">Last name</label>
+  <input class="form-control" type="text" id="lname" placeholder="Enter your last name...">
+<label for="email">Email</label>
+<input class="form-control" type="email" id="email" placeholder="Enter your email address...">
+<label for="phone">Phone number</label>
+<input class="form-control" type="tel" id="phone" placeholder="Enter your telephone number...">
+<label for="message">Message</label>
+<textarea class="form-control" placeholder="Enter your message here..." id="message" rows="5"></textarea>
 
 
+</form>
+</div>
 <h2 id="social">Social Media</h2>
+<div class="row">
+<div class="social">
+  <div class="col col-md-3">
+    <button class="btn btn-block btn-social btn-twitter" onclick="window.location='https://twitter.com/moftster?lang=en'"><i class="fa fa-twitter"></i> Connect with me on Twitter</button>
+ <a class="btn btn-block btn-social btn-instagram" onclick="window.location='https://www.instagram.com/sellmysnaps/'"><span class="fa fa-instagram"></span> Connect with me on Instagram</a>
+  <a class="btn btn-block btn-social btn-facebook" onclick="window.location='https://www.facebook.com/david.moftakhar.3'"><span class="fa fa-facebook"></span> Connect with me on Facebook</a>
+  <a class="btn btn-block btn-social btn-linkedin" onclick="window.location='https://www.linkedin.com/in/david-moftakhar-292915120/'"><span class="fa fa-linkedin"></span> Connect with me on Linkedin</a>
+</div>
+</div>
+</div>
+</div>
 
 </div>
+
 </div>
+
+
 </body>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

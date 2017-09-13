@@ -8,7 +8,7 @@
 }
 
 .about-section {
-  background-color: yellow;
+  text-align: middle;
 }
 
 .thumbnail {
@@ -26,11 +26,18 @@ h3 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 20px !important;
 }
 
-.img-fluid {
-  max-width: 100%;
-  height: auto;
+.img-responsive {
+  max-width: 300px !important;
+  max-height: 300px !important;
   padding: 15px;
+}
+
+.social {
+  padding-bottom: 50px;
+}
+
+.exp {
 }
